@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Java调用JS方法</title>
+
+        <!-- JS代码 -->
+        <script>
+            <!-- Android需要调用的方法 -->
+            function callJS(){
+                var result = prompt("js://webview?arg1=111&arg2=222");
+                alert("result : " + result);
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <!-- 点击按钮则调用callAndroid函数 -->
+        <button type="button" id="button1" onclick="callJS()">JS调用Android方法</button>
+    </body>
+
+</html>

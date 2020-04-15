@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="JS调用Android方法"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="addJavascriptInterface()进行对象映射"
+        android:id="@+id/btn_1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="shouldOverrideUrlLoading()方法回调拦截url"
+        android:id="@+id/btn_2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="onJsAlert()/onJsConfirm()/onJsPrompt()回调拦截对话框"
+        android:id="@+id/btn_3"/>
+
+</LinearLayout>

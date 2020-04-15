@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Java调用JS方法</title>
+
+        <!-- JS代码 -->
+        <script>
+
+            function callAndroid(){
+                <!-- 约定的url协议为：js://webview?arg1=111&arg2=222 -->
+                document.location = "js://webview?arg1=111&arg2=222";
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <!-- 点击按钮则调用callAndroid函数 -->
+        <button type="button" id="button1" onclick="callAndroid()">JS调用Android方法</button>
+    </body>
+
+</html>
